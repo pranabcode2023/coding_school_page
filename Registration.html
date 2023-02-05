@@ -7,7 +7,8 @@
     <title>Registration</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+
 </head>
 <body>
   <nav>
@@ -17,28 +18,107 @@
     <li> <a href="Alumni.html">Alumni</a></li>
     <li style="float:right"><a class="active" href="Contact.html">Contact us</a></li>
   </nav>
-  <h1>Registration</h1>
   
-  <form action="http://127.0.0.1:5500/index.html">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="xyz"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="xyz"><br><br>
-    <label for="e-mail">Email:</label><br>
-    <input type="text" id="e-mail" name="e-mail" value="info@example.com"><br><br>
-    <input type="submit" value="Submit">
-  </form> 
-
   
+    <h1>Registration Form</h1>
+    <form>
+      ><table>
+        <tr>
+          <td>
+             Name:
+          </td>
+          <td>
+            <input type="text" placeholder="Name">
+          </td>
+          <tr>
+          <td>
+            Phone Number:
+          </td>
+          <td>
+            <input type="phone" placeholder="+491**********" +491**********="">
+          </td>
+        </tr>
+             <tr>
+                <td>
+                  E-mail:
+                </td>
+                <td>
+                  <input type="email" placeholder="info@example.com"> 
+                </td>
+            </tr>
+            <tr>
+              <td>
+                Password:
+              </td>
+              <td>
+                <input type="password" placeholder="********">
+              </td>
+            </tr>
+                <td>
+                   Gender:
+                </td>
+                <td>
+                  <input type="radio" placeholder="gender">Male
+                  <input type="radio" placeholder="gender">Female
+                </td>
+              </tr>
+              <td>
+                Date of Birth:
+              </td>
+              <td>
+                <input type="date">
+              </td>
+            <tr>
+              <td>
+                Course :
+              </td>
+              <td>
+                <input type="checkbox" web development> Web Development
+              </td>
+              <td>
+                <input type="checkbox" data analytics> Data Analytics
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Education Qualification:
+              </td>
+              <td>
+                <select>
+                  <option>None</option>
+                  <option>Secondary School</option>
+                  <option>Higher Secondary</option>
+                  <option>Bachelor</option>
+                  <option>Masters</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Address:
+              </td>
+              <td>
+                <textarea rows="6" col="15" placeholder="Address"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </td>
+            </tr>
+          </tr>
+      </table>
+    </form>
+       
     <footer>
       Terms & conditions: 
       
       All the materials in this website are protected by trade mark law & copyright.
       <a href="https://www.facebook.com/codeacademyberlin" href="#" class="fa fa-facebook">Facebook</a>
+     
       <a href="https://www.instagram.com/codeacademyberlin/" href="#" class="fa fa-instagram">Instagram</a>
     </footer>
-    
-    
-        
-</body>
+  
+  </body>
 </html>
