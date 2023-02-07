@@ -119,3 +119,18 @@ main {
   margin-left: 120px;
 }
 
+.container{
+display: flex;
+align-items: stretch;
+}
+.container div{
+  padding: 10px 10px 0;
+}
+.container box1{
+  border: 1px solid black;
+  background: beige;
+}
+.container box2{
+  border: 1px solid black;
+  background: beige;
+}
