@@ -14,6 +14,8 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  font-family: Arial;
 }
 
 form {
@@ -81,7 +83,7 @@ iframe {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   width: inherit;
   max-width: inherit;
   padding: 0rem;
@@ -108,12 +110,7 @@ ul {
   opacity: 0.7;
 }
 
-.description {
-  display: block;
-  float: left;
-  width: 20%;
-  padding: 10px;
-}
+
 
 main {
   margin-left: 120px;
@@ -134,3 +131,70 @@ align-items: stretch;
   border: 1px solid black;
   background: beige;
 }
+
+@media screen and (hover) and (max-width: 600px){
+    h2:hover,.column{
+      color: brown;
+      width: 600px;
+     }
+    a:hover{
+      color: brown;
+    }  
+  }
+
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+ 
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
