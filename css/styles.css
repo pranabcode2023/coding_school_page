@@ -84,6 +84,7 @@ iframe {
 
 footer {
   position: relative;
+  bottom: 0;
   width: inherit;
   max-width: inherit;
   bottom: 0px;
