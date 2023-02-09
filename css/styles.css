@@ -129,12 +129,7 @@ background-color: bisque;
     }  
   }
 
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-
+  
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
