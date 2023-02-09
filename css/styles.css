@@ -122,13 +122,15 @@ background-color: bisque;
 @media screen and (hover) {
     h2:hover {
       color: brown;
-      width: 600px;
-     }
+    }
     a:hover{
       color: brown;
-    }  
+    } 
+    
+   h1:hover{
+    color: brown;
+   }
   }
-
   
   @media screen and (max-width: 600px) {
     .column {
@@ -144,7 +146,7 @@ background-color: bisque;
     margin: auto;
     text-align: center;
     align-items: center; 
-    margin-left: 120px;
+
   }
   
   
@@ -155,7 +157,7 @@ background-color: bisque;
   }
   
  
-  .row,
+  
   .row > .column {
     padding: 8px;
   }
@@ -164,21 +166,22 @@ background-color: bisque;
   .column {
     float: left;
     width: 25%;
-  }
+   }
   
  
   .row:after {
-    content: "";
-    display: table;
+   display: table;
     clear: both;
   }
   
  
   .content {
-    background-color: white;
+    background-color: bisque;
     padding: 10px;
     height: 500px;
     overflow: auto;
+    text-align: center;
+    
   }
 
   h2{
