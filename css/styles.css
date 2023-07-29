@@ -18,8 +18,14 @@ body {
  
 }
 
+.teamContainer{
+  display: flex;
+  justify-content: center;
+}
+
 form {
   text-align: center;
+
 }
 
 table {
