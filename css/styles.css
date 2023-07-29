@@ -1,27 +1,36 @@
 header {
-  color: black;
   text-align: center;
   font-size: 25px;
   background-color: bisque;
-  top: 0;
 }
+ 
+  * {
+    box-sizing: border-box;
+  }
   
 body {
   background-color: powderblue;
-  min-height: 100vh;
-  max-width: 100%;
-  /* border: 1px solid black;  */
-  margin: auto;
-  display: flex;
   flex-direction: column;
-  padding: 0px;
- 
+ }
+
+
+img {
+  text-align:center;
+  border-radius: 50%;
+  
 }
+
+
+
 
 .teamContainer{
   display: flex;
   justify-content: center;
 }
+
+
+
+
 
 form {
   text-align: center;
@@ -75,12 +84,7 @@ li a:hover:not(.active) {
   background-color: #04AA6D;
 }
   
-div img {
-  width:100%;
-  position: static;
-  margin:25px auto ;  
-  text-align:center;
-}
+
 
 iframe {
   width:100%;
@@ -143,10 +147,7 @@ background-color: bisque;
       width: 100%;
     }
   }
-  
-  * {
-    box-sizing: border-box;
-  }
+ 
   
   .main {
     max-width: 800px;
@@ -156,27 +157,40 @@ background-color: bisque;
 
   }
   
-  
-  
-  .row {
-    margin: 8px;
-    
-  }
-  
- 
-  
-  .row .column {
-    padding: 8px;
+
+  .teamContainer{
+    display: flex;
   }
   
   
-  .column {
+  .alumniContainer {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .alumniDiv{
     float: left;
-    width: 25%;
+    width: 24%;
+    border: 2px solid black;
+   margin-left: 10px;
+   }
+
+  
+  
+  .mentorDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 24%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
    }
   
  
-  .row:after {
+  .alumniContainer:after {
    display: table;
     clear: both;
   }
@@ -188,7 +202,7 @@ background-color: bisque;
     height: 500px;
     overflow: auto;
     text-align: center;
-    
+    border-radius: 10px;
   }
 
   h2{
