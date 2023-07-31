@@ -14,11 +14,6 @@ body {
  }
 
 
- img {
-  border-radius: 50%;
-  border: 2px solid black;
-  padding: 5px;
-}
 
 
 /*********************NOTE - navbar************************************ */
@@ -56,15 +51,18 @@ li a:hover:not(.active) {
 
 /***********************index.html****************************** */
 
-/* .pageContainer{
-  border: 2px solid red;
-} */
+.pageContainer{
+  background-color: bisque;
+
+}
 
 .teamContainer{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .mentorDiv{
+  background-color: powderblue;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 300px;
   margin: auto;
@@ -72,14 +70,23 @@ li a:hover:not(.active) {
  }
 
  .mentor {
-  background-color: bisque;
-  height: 200px;
-  text-align: center;
+  background-color:burlywood;
+  border-radius: 50%;
+  height: 180px;
   position: relative;
 }
-.image {
-  opacity: 1;
+
+
+.mentorImage {
   display: block;
+  border-radius: 50%;
+  border: 5px solid #04AA6D;
+  padding: 3px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  opacity: 1;
   width: 60%;
   height: auto;
   transition: .5s ease;
@@ -110,9 +117,10 @@ li a:hover:not(.active) {
 
 .text {
   background-color: #04AA6D;
+  border-radius: 10px;
   color: white;
   font-size: 16px;
-  padding: 6px 3px ;
+  padding: 16px 32px ;
 }
 
 .alumniContainer:after {
@@ -123,6 +131,18 @@ li a:hover:not(.active) {
 
 
 /*************************alumni.html********************************** */
+
+
+.alumniImage {
+  display: block;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .alumniContainer {
   margin: 10px;
