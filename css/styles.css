@@ -4,14 +4,78 @@ header {
   background-color: bisque;
 }
  
-  * {
+  /* * {
     box-sizing: border-box;
   }
-  
+   */
 body {
+  text-align: center;
   background-color: powderblue;
-  flex-direction: column;
  }
+
+
+ .main {
+  /* max-width: 800px; */
+  /* margin: auto; */
+  text-align: center;
+  align-items: center; 
+
+}
+
+
+.pageContainer{
+  border: 5px solid bisque;
+}
+
+.teamContainer{
+  display: flex;
+}
+
+
+.alumniContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.alumniDiv{
+  float: left;
+  width: 24%;
+  border: 2px solid black;
+ margin-left: 10px;
+ border-radius: 10px;
+ }
+
+
+
+.mentorDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left;
+  width: 24%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+ }
+
+
+.alumniContainer:after {
+ display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: bisque;
+  padding: 10px;
+  height: 500px;
+  overflow: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
 
 
 img {
@@ -149,66 +213,6 @@ background-color: bisque;
   }
  
   
-  .main {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    align-items: center; 
-
-  }
-  
-
-  .teamContainer{
-    display: flex;
-  }
-  
-  
-  .alumniContainer {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .alumniDiv{
-    float: left;
-    width: 24%;
-    border: 2px solid black;
-   margin-left: 10px;
-   border-radius: 10px;
-   }
-
-  
-  
-  .mentorDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    float: left;
-    width: 24%;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 5px;
-   }
-  
- 
-  .alumniContainer:after {
-   display: table;
-    clear: both;
-  }
-  
- 
-  .content {
-    background-color: bisque;
-    padding: 10px;
-    height: 500px;
-    overflow: auto;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  h2{
-    text-align: center;
-  }
   
  
   
