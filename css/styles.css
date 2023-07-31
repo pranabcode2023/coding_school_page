@@ -15,9 +15,9 @@ body {
 
 
  img {
-  text-align:center;
   border-radius: 50%;
-  
+  border: 2px solid black;
+  padding: 5px;
 }
 
 
@@ -62,10 +62,67 @@ li a:hover:not(.active) {
 
 .teamContainer{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+.mentorDiv{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+ }
+
+ .mentor {
+  background-color: bisque;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 60%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+ .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
+
+
+.mentor:hover .image{
+  opacity: 0.3;
+}
+
+.mentor:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 6px 3px ;
+}
+
+.alumniContainer:after {
+ display: table;
+  clear: both;
+}
+
+
+
+/*************************alumni.html********************************** */
 
 .alumniContainer {
   margin: 10px;
@@ -81,26 +138,6 @@ li a:hover:not(.active) {
  border-radius: 10px;
  }
 
-
-
-.mentorDiv{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  float: left;
-  width: 24%;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: 5px;
- }
-
-
-.alumniContainer:after {
- display: table;
-  clear: both;
-}
-
-
 .content {
   background-color: bisque;
   padding: 10px;
@@ -108,11 +145,8 @@ li a:hover:not(.active) {
   overflow: auto;
   text-align: center;
   border-radius: 10px;
+  position: relative;
 }
-
-
-
-
 
 
 
